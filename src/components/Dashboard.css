@@ -1,0 +1,132 @@
+.dashboard_container {
+  position: relative;
+  top: 100px;
+  left: 64px;
+}
+
+.dashboard {
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.policy-btn {
+  margin-top: 20px;
+}
+
+/* Add Policy Button */
+.policy-btn button {
+  width: 200px;
+  background-color: #f36d22;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.policy-btn button:hover {
+  background-color: #d55c1b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .policy-btn button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* General Styles */
+#services {
+  padding: 20px 20px;
+  z-index: 0;
+  left: 300px;
+  position: absolute;
+  top: 400px;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#services h4 {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Service Box Styles */
+.service-box {
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 50px;
+  color: #f36d22;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-box {
+    width: 100%;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*  */
